@@ -1,0 +1,6 @@
+{
+  "nodes": ["u", "v", "w", "x"],
+  "edges": [["u", "v"], ["u", "w"], ["u", "x"]],
+  "directed": false
+}
+

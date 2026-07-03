@@ -1,0 +1,47 @@
+{
+  "templates": [
+    {
+      "name": "star_4",
+      "topology": "Star",
+      "nodes": ["u", "v", "w", "x"],
+      "edges": [["u", "v"], ["u", "w"], ["u", "x"]],
+      "directed": false
+    },
+    {
+      "name": "ring_4",
+      "topology": "Ring",
+      "nodes": ["a", "b", "c", "d"],
+      "edges": [["a", "b"], ["b", "c"], ["c", "d"], ["d", "a"]],
+      "directed": false
+    },
+    {
+      "name": "chain_4",
+      "topology": "Chain / Bus",
+      "nodes": ["a", "b", "c", "d"],
+      "edges": [["a", "b"], ["b", "c"], ["c", "d"]],
+      "directed": false
+    },
+    {
+      "name": "bridge_mesh_5",
+      "topology": "Bridge / Mesh",
+      "nodes": ["a", "b", "c", "d", "e"],
+      "edges": [["a", "b"], ["b", "c"], ["c", "d"], ["d", "a"], ["b", "e"], ["e", "d"]],
+      "directed": false
+    },
+    {
+      "name": "tree_5",
+      "topology": "Tree",
+      "nodes": ["r", "a", "b", "c", "d"],
+      "edges": [["r", "a"], ["r", "b"], ["b", "c"], ["b", "d"]],
+      "directed": false
+    },
+    {
+      "name": "cross_layer_6",
+      "topology": "Cross-Layer / Layered",
+      "nodes": ["r1", "r2", "s1", "s2", "h1", "h2"],
+      "edges": [["r1", "r2"], ["r1", "s1"], ["r2", "s2"], ["s1", "h1"], ["s2", "h2"], ["s1", "s2"]],
+      "directed": false
+    }
+  ]
+}
+

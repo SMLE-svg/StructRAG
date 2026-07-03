@@ -1,0 +1,22 @@
+{
+  "graph": {
+    "nodes": ["u", "v", "w", "x"],
+    "edges": [["u", "v"], ["u", "w"]],
+    "directed": false
+  },
+  "uncertain_edges": [
+    {
+      "source": "u",
+      "target": "x",
+      "confidence": 0.45,
+      "signals": {
+        "continuity": 0.50,
+        "proximity": 0.42,
+        "alignment": 0.41,
+        "node_support": 0.35
+      },
+      "reason": "Curved or partially occluded connection."
+    }
+  ]
+}
+
