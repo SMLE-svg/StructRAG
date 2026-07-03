@@ -1,5 +1,11 @@
 # StructRAG: Structure-Aware Diagram Reasoning for STEM Education
 
+This repository provides the reproducibility materials for the paper:
+
+**Advancing Diagram-Based Reasoning in AI Tutoring Systems: A Structural Approach for STEM Education**
+
+## Overview
+
 StructRAG is a framework for improving AI interpretation of diagram-based STEM questions. Many AI tutoring systems can read text reasonably well, but they often struggle with diagrams that contain missing connections, curved lines, overlapping edges, unlabeled junctions, or non-standard visual layouts. This limitation is important because many engineering, computing, and systems problems depend not only on recognizing labels, but also on understanding how components are connected. StructRAG addresses this problem by converting diagrams into graph structures and using structural retrieval to support more reliable reasoning.
 
 The main significance of StructRAG is that it shifts diagram understanding from surface-level visual recognition to structure-aware reasoning. Instead of asking a language model to interpret a diagram directly from OCR text or raw visual cues, StructRAG builds an intermediate graph representation and compares it with canonical topology patterns. This makes the reasoning process more explicit, easier to inspect, and more suitable for educational feedback. The framework is especially useful for STEM diagrams such as circuits, network topologies, bus structures, bridge or mesh layouts, and hierarchical systems.
@@ -14,7 +20,7 @@ In the empirical study, StructRAG is evaluated on 1,650 STEM diagram-based quest
 
 Overall, StructRAG provides a practical approach for building more reliable diagram-aware AI tutoring systems. Its value lies not only in improving recognition accuracy, but also in making diagram interpretation more transparent and structurally grounded. By explicitly modeling diagrams as graphs and using retrieved topology patterns as reasoning support, StructRAG can help AI systems identify missing connections, explain structural errors, and provide more useful feedback for diagram-heavy STEM learning tasks.
 
-# StructRAG Reproduction Code
+# StructRAG Reproduction Package
 
 This repository provides a lightweight, reproducible implementation of the core StructRAG pipeline described in the manuscript. It is designed for transparency and review rather than maximum production performance. The code reproduces the main stages of StructRAG: graph construction, structural template retrieval, graph edit distance matching, pattern-aware prompting, optional GPT-based validation, output aggregation, and evaluation.
 
